@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/payment.css">
+    <title>Payment</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="../html/themes.html">
+              <div class="row">
+                <div class="col-50">
+                  <a href="../html/themes.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                  <h2>Payment</h2>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr" required> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn" >
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://kit.fontawesome.com/a1195c5976.js" crossorigin="anonymous"></script>
+<script src="../js/payment.js"></script>
+</html>

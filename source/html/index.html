@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>TodoList</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li style="float: left">
+          <a href="#logo"><ion-icon name="watch-sharp"></ion-icon></a>
+        </li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./themes.html">themes</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>Create your Todo-List</h1>
+        <form action="" id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="What are your tasks for today?"
+          />
+          <input type="submit" id="task-submit" value="Add" />
+        </form>
+      </header>
+      <main>
+        <section class="task-list">
+          <div id="tasks"></div>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">copyright 2023</footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="../js/index.js"></script>
+</html>
